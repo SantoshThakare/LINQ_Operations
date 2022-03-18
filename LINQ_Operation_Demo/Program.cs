@@ -57,7 +57,14 @@ namespace LINQ_Operation_Demo
                         "\n 2. SelectToRecords " +
                         "\n 3. CountOfRecords" +
                         "\n 4. RetrieveProductIdCount" +
-                        "\n 5. RetrieveProductIdAndReview"
+                        "\n 5. RetrieveProductIdAndReview" +
+                        "\n 6. SkipTopFiveRecords" +
+                        "\n 7. RetrieveProductIdAndRetrieveBySelect" +
+                        "\n 8. CreateDataTableAndAddValues" +
+                        "\n 9. IsLikeValue " +
+                        "\n 10. RetrieveAverageOfRecord"+
+                        "\n 11. ReteriveNiceReviewRecord" +
+                        "\n 12. RetrieveRecordbyuserid"
                         );
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -81,6 +88,29 @@ namespace LINQ_Operation_Demo
                     case 5:
                         manage.RetrieveProductIdAndReview(ProductReviewLIst);
                         break;
+                    case 6:
+                        manage.SkipTopFiveRecords(ProductReviewLIst);
+                        break;
+                    case 7:
+                        manage.RetrieveProductIdAndRetrieveBySelect(ProductReviewLIst);
+                        break;
+                    case 8:
+                        manage.CreateDataTableAndAddValues(ProductReviewLIst);
+                        break;
+
+                    case 9:
+                        manage.IsLikeValue(ProductReviewLIst);
+                        break;
+                    case 10:
+                        manage.RetrieveAverageOfRecord(ProductReviewLIst);
+                        break;
+                    case 11:
+                        manage.ReteriveNiceReviewRecord(ProductReviewLIst);
+                        break;
+                    case 12:
+                        manage.RetrieveRecordbyuserid(ProductReviewLIst);
+                        break;
+                    
 
                 }
             }
